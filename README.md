@@ -7,8 +7,9 @@ The following are the features of the portal:
 -	Users will be able to create and sublet their houses, apartments, condos or townhouses.
 -	Users will be able to browse and filter the listings based on housing type, address, start date, end date, price, area, number of beds and baths, number of occupants, etc
 -	Users will be able to filter results based on proximity to certain amenities like:
-o	Universities
-o	Marketplaces
-o	Cafes
-o	Bicycle rentals
+--	Universities
+--	Marketplaces
+--	Cafes
+--	Bicycle rentals
+
 As soon as a house gets subleased, the sublessee receives a confirmation mail.
