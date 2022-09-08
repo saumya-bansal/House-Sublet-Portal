@@ -1,0 +1,25 @@
+apiVersion: apps/v1 #  for k8s versions before 1.9.0 use apps/v1beta2  and before 1.8.0 use extensions/v1beta1
+kind: Deployment
+metadata:
+  name: rest-server
+spec:
+  selector:
+    matchLabels:
+      app: rest-server
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rest-server
+    spec:
+      containers:
+      - name: rest-server
+        image: saumzz19/rest-project
+        env:
+        - name: REDIS_HOST
+          value: redis
+        - name: RABBITMQ_HOST
+          value: rabbitmq
+        ports:
+          - containerPort: 5000
+---

@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: rest-server
+spec:
+  selector:
+    app: se
+  ports:
+    - protocol: TCP
+      port: 6666
+      targetPort: 5000
